@@ -1,4 +1,5 @@
 // import { productState } from '@/types/product.types';
+import { productState } from '@/types/product.types';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 export const getProducts = createAsyncThunk(
@@ -12,19 +13,19 @@ export const getProducts = createAsyncThunk(
     return data;
   }
 );
-// const initialState: productState = {
-//   data: null,
-// };
+const initialState: productState = {
+  data: null,
+  isFetched: false,
+};
 
 const productSlice = createSlice({
   name: 'producrs',
-  initialState: {
-    data: null,
-  },
+  initialState,
   reducers: {},
   extraReducers: function (builder) {
     builder.addCase(getProducts.fulfilled, (state, action) => {
       state.data = action.payload;
+      state.isFetched = true;
     });
     builder.addCase(getProducts.rejected, () => {
       console.log('flase');

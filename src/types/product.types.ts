@@ -1,3 +1,19 @@
-// export interface productState {
-//   data: null | string;
-// }
+export interface productState {
+  data: null | Product[];
+  isFetched: boolean;
+}
+
+interface Rating {
+  rate: number;
+  count: number;
+}
+
+export interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: Rating;
+}
