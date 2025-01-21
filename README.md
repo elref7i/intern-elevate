@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Products Gallery Website
 
-## Getting Started
+## Project Description
+The **Products Gallery** website is a responsive web application that displays a gallery of products fetched from the [Fake Store API](https://fakestoreapi.com/products). The application includes:
 
-First, run the development server:
+1. **Products Page**: Displays a list of products with their name, image, price, and a short description.
+2. **Product Details Page**: Provides detailed information about a selected product, including its name, full description, image, price, and category.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is built using **Next.js** for dynamic routing and either **Tailwind CSS** or **Material-UI** for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Products Page
+- Fetches and displays products using the Fake Store API.
+- Each product shows the following details:
+  - Name
+  - Image
+  - Price
+  - Short Description
+- Fully responsive design with professional styling.
 
-## Learn More
+### Product Details Page
+- Navigates to a detailed view when clicking a product.
+- Displays the following details:
+  - Product Name
+  - Full Description
+  - Image
+  - Price
+  - Category
+- Implemented using Next.js dynamic routing.
 
-To learn more about Next.js, take a look at the following resources:
+### Optional Enhancements
+- **Search Bar**: Filter products by name.
+- **Loading States**: Display loading indicators while fetching data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+1. **Frontend Framework**: Next.js
+2. **Styling**: Tailwind CSS or Material-UI
+3. **API**: Fake Store API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Setup Instructions
+
+### Prerequisites
+- Node.js and npm installed on your system.
+
+### Steps to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/products-gallery.git
+   cd products-gallery
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+
+
+
+## Evaluation Criteria
+- Correct implementation of features and dynamic routing.
+- Proper use of Tailwind CSS or Material-UI.
+- Clean and structured code with reusable components.
+- Fully responsive and visually appealing design.
+- Clear and detailed README documentation.
+
+---
+
+## Future Improvements
+- Add pagination for the products page.
+- Implement user authentication.
+- Enhance performance with server-side rendering or incremental static regeneration.
+
+---
+
+## Author
+**Ahmed Khaled Refai**
+
+- [LinkedIn](https://www.linkedin.com/in/el-refai/)
+- [GitHub](https://github.com/elref7i)
+- Email: ahmed.khaled.refai.b@gmail.com
+
