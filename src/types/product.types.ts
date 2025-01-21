@@ -1,6 +1,7 @@
 export interface productState {
   data: null | Product[];
   isFetched: boolean;
+  singleProduct: null | Product;
 }
 
 interface Rating {

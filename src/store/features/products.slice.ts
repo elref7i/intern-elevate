@@ -13,9 +13,21 @@ export const getProducts = createAsyncThunk(
     return data;
   }
 );
+export const getSingleProduct = createAsyncThunk(
+  'producrs/getSingleProduct',
+  async (id: string) => {
+    const options = {
+      url: `https://fakestoreapi.com/products/${id}`,
+      method: 'GET',
+    };
+    const { data } = await axios.request(options);
+    return data;
+  }
+);
 const initialState: productState = {
   data: null,
   isFetched: false,
+  singleProduct: null,
 };
 
 const productSlice = createSlice({
@@ -28,6 +40,13 @@ const productSlice = createSlice({
       state.isFetched = true;
     });
     builder.addCase(getProducts.rejected, () => {
+      console.log('flase');
+    });
+    builder.addCase(getSingleProduct.fulfilled, (state, action) => {
+      state.singleProduct = action.payload;
+      state.isFetched = true;
+    });
+    builder.addCase(getSingleProduct.rejected, () => {
       console.log('flase');
     });
   },
