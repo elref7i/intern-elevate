@@ -1,5 +1,6 @@
 'use client';
-import Card from '@/components/Card/Card';
+// import Card from '@/components/Card/Card';
+import Card from '../../components/Card/Card';
 import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
 import { getProducts } from '@/store/features/products.slice';
 import { Product } from '@/types/product.types';
