@@ -1,5 +1,4 @@
-// import { productState } from '@/types/product.types';
-import { productState } from '@/types/product.types';
+import { productState } from '../../types/product.types';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 export const getProducts = createAsyncThunk(

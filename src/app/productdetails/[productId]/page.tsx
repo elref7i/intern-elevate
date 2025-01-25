@@ -1,6 +1,9 @@
 'use client';
-import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
-import { getSingleProduct } from '@/store/features/products.slice';
+import { getSingleProduct } from '../../../store/features/products.slice';
+import { useAppDispatch, useAppSelector } from '../../../hooks/store.hook';
+
+// import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
+// import { getSingleProduct } from '@/store/features/products.slice';
 import { use, useEffect } from 'react';
 
 export default function Page({

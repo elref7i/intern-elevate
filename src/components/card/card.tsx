@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Product } from '@/types/product.types';
+import { Product } from '../../types/product.types';
 import React from 'react';
 import Link from 'next/link';
 

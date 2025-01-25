@@ -11,4 +11,4 @@ export default store;
 type AppStore = typeof store;
 
 export type SotreState = ReturnType<AppStore['getState']>;
-export type SoreDispatch = AppStore['dispatch'];
+export type SotreDispatch = AppStore['dispatch'];
