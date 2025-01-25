@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { Product } from '../../types/product.types';
+// import { Product } from '../../types/product.types';
 import React from 'react';
 import Link from 'next/link';
+import { Product } from '@/types/product.types';
 
 export default function Card({ productInfo }: { productInfo: Product }) {
   const { title, price, category, description, image, id } = productInfo;

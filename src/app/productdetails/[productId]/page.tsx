@@ -1,6 +1,8 @@
 'use client';
-import { getSingleProduct } from '../../../store/features/products.slice';
-import { useAppDispatch, useAppSelector } from '../../../hooks/store.hook';
+import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
+import { getSingleProduct } from '@/store/features/products.slice';
+// import { getSingleProduct } from '../../../store/features/products.slice';
+// import { useAppDispatch, useAppSelector } from '../../../hooks/store.hook';
 
 // import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
 // import { getSingleProduct } from '@/store/features/products.slice';
