@@ -1,13 +1,9 @@
 'use client';
-// import Card from '../components/Card/Card';
 import { useEffect } from 'react';
-// import { useAppDispatch, useAppSelector } from '../hooks/store.hook';
-// import { getProducts } from '../store/features/products.slice';
-// import { Product } from '../types/product.types';
-import Card from '@components/Card/Card';
-import { getProducts } from '@/store/features/products.slice';
-import { useAppDispatch, useAppSelector } from '@/hooks/store.hook';
-import { Product } from '@/types/product.types';
+import { useAppDispatch, useAppSelector } from '../hooks/store.hook';
+import { Product } from '../types/product.types';
+import { getProducts } from '../store/features/products.slice';
+import Card from './_components/Card/Card';
 
 export default function Home() {
   const dispatch = useAppDispatch();
